@@ -1,0 +1,3 @@
+#!/bin/bash
+
+if [ -f "./macout.txt" ]; then rm ./macout.txt ;fi; while read line ;do echo admin$line|sed 's/://g'|openssl md5|cut -c11-32 >> ./macout.txt ;done < ./macin.txt

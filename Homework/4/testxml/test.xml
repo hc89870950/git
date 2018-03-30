@@ -1,0 +1,16 @@
+<config>
+<logo>http://xxx.com/files/video_logo/logo.swf</logo>
+<!--input-->
+<file>http://xxx.com//video/19e74c0e3d8a8ec14e0b593028a97fde/494a98aa/c4ca4238a0b9238.flv</file>
+<!--pref-->
+<address>192.168.15.1</address>
+<autostart>true</autostart>
+<abouttext>XXX.com</abouttext>
+<address>192.168.1.1</address>
+<aboutlink>http://xxx.com</aboutlink>
+<streamer>lighttpd</streamer>
+<!--colors-->
+<backcolor>222222</backcolor>
+<frontcolor>ffffff</frontcolor>
+<lightcolor>666666</lightcolor>
+</config>

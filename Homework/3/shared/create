@@ -1,0 +1,14 @@
+#/bin/bash
+
+gcc -c -fPIC height.c weight.c bmi.c
+
+gcc -shared -Wl,-soname,libshared.so.1 -o libshared.so.1.0.0 height.o weight.o bmi.o
+
+ln -s libshared.so.1.0.0 libshared.so
+ln -s libshared.so.1.0.0 libshared.so.1
+
+#gcc -c height.c weight.c bmi.c 
+
+#ar rcs libstatic.a height.o weight.o bmi.o
+
+
