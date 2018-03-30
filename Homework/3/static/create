@@ -1,0 +1,7 @@
+#!/bin/bash
+
+gcc -c height.c weight.c bmi.c 
+
+ar rcs libstatic.a height.o weight.o bmi.o
+
+

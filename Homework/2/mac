@@ -1,0 +1,21 @@
+#!/bin/sh
+
+
+if [ -f "./macout.txt" ]; then
+	rm ./macout.txt
+fi
+#for line in `cat ./macin.txt`
+while read line
+do
+	#echo $line
+	#mac=$line | sed 's/://g'
+	test=112233445566
+	echo admin$test
+	echo admin$line|sed 's/://g'
+	echo admin$test|openssl md5|cut -c11-32
+	echo admin$line|sed 's/://g'|openssl md5|cut -c11-32
+
+
+	echo admin$mac|openssl md5|cut -c11-32 >> ./macout.txt 
+	echo -e "\r\n" >> ./macout.txt
+done < ./macin.txt
