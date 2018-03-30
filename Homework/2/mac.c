@@ -4,7 +4,7 @@
 
 
 int main(){
-	FILE *fp =fopen("./macin.txt","r"); //修改測試123123123
+	FILE *fp =fopen("./macin.txt","r"); //修改測試
 	FILE *fo =fopen("./macout.txt","w");
 	if (fp  == NULL ){
 		printf("open file error\n");
